@@ -1,0 +1,15 @@
+# Always sort the files
+# --sort−files
+
+# Always color, even if piping to a another program
+#--color
+
+# Use "less −r" as my pager
+# --pager
+# less -r
+
+--type-set=coffeescript=.coffee
+--type-set=coffee=.coffee
+
+--ignore-dir=.idea/
+--ignore-dir=node_modules/

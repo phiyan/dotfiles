@@ -1,0 +1,35 @@
+[alias]
+  ls = show-ref
+  st = status
+  co = checkout
+  ci = commit -s
+  br = branch
+  vis = !gitk --all &
+[merge]
+	tool = diffmerge
+[diff]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
+[difftool "diffmerge"]
+	cmd = diffmerge $LOCAL $REMOTE
+[format]
+  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow 
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan

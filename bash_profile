@@ -7,8 +7,6 @@ export GREP_OPTIONS='--color=auto'
 export LSCOLORS=gxfxcxdxbxegedabagacad # Dark lscolor scheme
 export HISTCONTROL=ignoredups
 
-# FIX FOR STUPID LINE WRAPPING GLITCH WITH COLORS EXPLAINED BELOW:
-
 # Readline, the line editing library that bash uses, does not know
 # that the terminal escape sequences do not take up space on the
 # screen. The redisplay code assumes, unless told otherwise, that
@@ -131,10 +129,6 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 export PATH=./node_modules/.bin:~/bin:/usr/local/bin:$PATH
-
-##
-# Your previous /Users/dimroc/.bash_profile file was backed up as /Users/dimroc/.bash_profile.macports-saved_2011-07-16_at_10:07:53
-##
 
 # MacPorts Installer addition on 2011-07-16_at_10:07:53: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH

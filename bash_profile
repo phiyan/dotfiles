@@ -32,7 +32,7 @@ DARKCUSTOMCOLORMIX='\[\e[1;32m\]'
 NC='\[\e[0m\]' # No Color
 
 # PS1="${CUSTOMCOLORMIX}\\u@\h: \\W]\\$ ${NC}"
-PS1="${DARKCUSTOMCOLORMIX}\\u@\h: \\W]\$(parse_git_branch)$ ${NC}"
+PS1="${DARKCUSTOMCOLORMIX}\\u@\h: \\W]${BLUE}\$(parse_git_branch)${DARKCUSTOMCOLORMIX}$ ${NC}"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 

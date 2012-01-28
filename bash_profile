@@ -6,6 +6,7 @@ export GREP_OPTIONS='--color=auto'
 # export LSCOLORS=Exfxcxdxbxegedabagacad
 export LSCOLORS=gxfxcxdxbxegedabagacad # Dark lscolor scheme
 export HISTCONTROL=ignoredups
+export EDITOR=mvim
 
 # Readline, the line editing library that bash uses, does not know
 # that the terminal escape sequences do not take up space on the

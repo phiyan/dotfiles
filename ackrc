@@ -9,7 +9,11 @@
 # less -r
 
 --type-set=coffeescript=.coffee
---type-set=coffee=.coffee
+--type-set=sass=.scss,.sass
+--type-set=less=.less
+--type-set=haml=.haml
+--type-set=markdown=.md
+--type-set=ruby=.rake,.rsel,.ru
 
 --ignore-dir=.idea/
 --ignore-dir=node_modules/

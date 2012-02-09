@@ -25,15 +25,15 @@ export EDITOR=mvim
 # Define some colors first:
 RED='\[\e[1;31m\]'
 GREEN='\[\e[0;32m\]'
-BLUE='\[\e[1;34m\]'
+BLUE='\[\e[34m\]'
 DARKBROWN='\[\e[1;33m\]'
 DARKGRAY='\[\e[1;30m\]'
 CUSTOMCOLORMIX='\[\e[1;30m\]'
-DARKCUSTOMCOLORMIX='\[\e[1;32m\]'
+DARKCUSTOMCOLORMIX='\[\e[32m\]'
 NC='\[\e[0m\]' # No Color
 
 # PS1="${CUSTOMCOLORMIX}\\u@\h: \\W]\\$ ${NC}"
-PS1="${DARKCUSTOMCOLORMIX}\\u@\h: \\W]${BLUE}\$(parse_git_branch)${DARKCUSTOMCOLORMIX}$ ${NC}"
+PS1="${DARKCUSTOMCOLORMIX}\\u@\h: \\W ${BLUE}\$(parse_git_branch)${DARKCUSTOMCOLORMIX}$ ${NC}"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 

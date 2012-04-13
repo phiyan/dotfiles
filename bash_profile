@@ -117,12 +117,16 @@ alias gemuninstallall='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
 alias untar="tar -xvf"
 alias rtags="find . -name '*.rb' | xargs /usr/bin/ctags -R -a -f TAGS"
 
-alias mongod="mongod --dbpath ~/data/db"
+# alias mongod="mongod --dbpath ~/data/db"
 alias chrome="open -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 # alias hibernate="sudo pmset -a hibernatemode 5; sudo shutdown -s now && sudo pmset -a hibernatemode 3"
 
-alias borr="cd ~/Repos/git/beyonceorrihanna"
+alias be="bundle exec"
+alias borr="cd ~/workspace/beyonceorrihanna"
+alias rd="cd ~/workspace/revealdown"
+alias current="cd ~/workspace/curriculum_RubyForDevs/lectures/05-rspec/"
+alias gitchanges="git st -s | sed 's/^...//g'"
 
 # bash git completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -136,3 +140,4 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 export PATH=/usr/local/lib/jsctags/:$PATH
+export PATH=/usr/local/bin/:$PATH

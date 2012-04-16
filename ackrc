@@ -1,8 +1,8 @@
---type-add=coffee=.coffee
---type-add=sass=.scss,.sass
---type-add=less=.less
---type-add=haml=.haml
---type-add=markdown=.md
+--type-set=coffee=.coffee
+--type-set=sass=.scss,.sass
+--type-set=less=.less
+--type-set=haml=.haml
+--type-set=markdown=.md
 --type-add=ruby=.rake,.rsel,.ru
 
 --ignore-dir=.idea/

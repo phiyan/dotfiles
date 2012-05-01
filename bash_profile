@@ -127,6 +127,8 @@ alias borr="cd ~/workspace/beyonceorrihanna"
 alias rd="cd ~/workspace/revealdown"
 alias current="cd ~/workspace/curriculum_RubyForDevs/lectures/05-rspec/"
 alias gitchanges="git st -s | sed 's/^...//g'"
+alias gobj="gcc -framework foundation"
+alias clangobj="clang -framework foundation"
 
 # bash git completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then

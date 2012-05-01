@@ -15,7 +15,7 @@
 [difftool "diffmerge"]
 	cmd = diffmerge $LOCAL $REMOTE
 [format]
-  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+  pretty = format:"%h %C(yellow)%ci%Creset %Cgreen%an%Creset | %s"
 [color]
   branch = auto
   diff = auto

@@ -110,6 +110,7 @@ alias sassw='sass --watch'
 alias sassdefault='sass --watch stylesheets/sass:stylesheets/compiled'
 alias coffeed='coffee --nodejs --debug'
 alias coffeedefault='coffee -lo javascripts/ -w coffeescripts/ &'
+alias shutupvim="rm /var/tmp/*.sw*"
 
 alias home="cd ~; clear; ls -lAh"
 alias gemdoc='gem environment gemdir'/doc

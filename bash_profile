@@ -104,6 +104,7 @@ alias trash='safe_rm'
 # alias rm='rm -i'
 alias grep='grep -H -n'
 alias pcurl='curl --proxy localhost:8888'
+alias rmquarantine='xattr -d com.apple.quarantine'
 
 alias stop='kill -2'
 alias sassw='sass --watch'

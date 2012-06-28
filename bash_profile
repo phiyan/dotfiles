@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export TERM=xterm-color
+export TERM=xterm-256color
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 # export LSCOLORS=Exfxcxdxbxegedabagacad
@@ -117,7 +117,8 @@ alias home="cd ~; clear; ls -lAh"
 alias gemdoc='gem environment gemdir'/doc
 alias gemuninstallall='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
 alias untar="tar -xvf"
-alias rtags="find . -name '*.rb' | xargs /usr/bin/ctags -R -a -f TAGS"
+alias rtags="find . -name '*.rb' | xargs /usr/bin/ctags -R -a -f tags"
+alias rgem="rvm gemset"
 
 # alias mongod="mongod --dbpath ~/data/db"
 alias chrome="open -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
@@ -127,7 +128,7 @@ alias chrome="open -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Ch
 alias be="bundle exec"
 alias borr="cd ~/workspace/beyonceorrihanna"
 alias rd="cd ~/workspace/revealdown"
-alias current="cd ~/workspace/curriculum_RubyForDevs/lectures/05-rspec/"
+alias current="cd ~/workspace/new-block-city"
 alias gitchanges="git st -s | sed 's/^...//g'"
 alias gobj="gcc -framework foundation"
 alias clangobj="clang -framework foundation"

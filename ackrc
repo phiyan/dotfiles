@@ -7,3 +7,5 @@
 
 --ignore-dir=.idea/
 --ignore-dir=node_modules/
+
+--smart-case

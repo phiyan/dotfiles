@@ -1,5 +1,11 @@
 #!/bin/bash
 
+unsafe_chrome()
+{
+  open -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome $1 --args --allow-file-access-from-files
+}
+export -f unsafe_chrome
+
 list_detailed_more()
 {
   ls -lah $1 | more

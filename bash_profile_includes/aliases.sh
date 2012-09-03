@@ -26,7 +26,7 @@ alias rtags="find . -name '*.rb' | xargs /usr/bin/ctags -R -a -f tags"
 alias rgem="rvm gemset"
 
 # alias mongod="mongod --dbpath ~/data/db"
-alias chrome="open -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias chrome="unsafe_chrome"
 
 # alias hibernate="sudo pmset -a hibernatemode 5; sudo shutdown -s now && sudo pmset -a hibernatemode 3"
 

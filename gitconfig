@@ -37,12 +37,15 @@
   old = red bold
   new = green bold
 [color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
+  added = green
+  changed = yellow
+  untracked = red
 [push]
   default = current
 [apply]
   whitespace = nowarn
 [branch]
   autosetupmerge = true
+[user]
+  name = Dimitri Roche
+  email = dimroc@gmail.com

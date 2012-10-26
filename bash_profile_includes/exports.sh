@@ -6,7 +6,8 @@ export GREP_OPTIONS='--color=auto'
 export LSCOLORS=Exfxcxdxbxegedabagacad
 # export LSCOLORS=gxfxcxdxbxegedabagacad # Dark lscolor scheme
 export HISTCONTROL=ignoredups
-export EDITOR=mvim
+export EDITOR=vim
+export VISUAL=mvim
 
 # PATH
 export PATH=./node_modules/.bin:$PATH

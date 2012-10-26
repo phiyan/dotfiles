@@ -5,6 +5,7 @@
   st = status
   co = checkout
   ci = commit -s
+  ciff = diff --cached
   br = branch
   vis = !gitk --all &
   llog = log --date=local

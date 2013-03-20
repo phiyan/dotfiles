@@ -40,7 +40,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export LSCOLORS=gxfxcxdxbxegedabagacad # Dark lscolor scheme
-export PATH=/Users/dimitrib/.rvm/gems/ruby-2.0.0-p0/bin:/Users/dimitrib/.rvm/gems/ruby-2.0.0-p0@global/bin:/Users/dimitrib/.rvm/rubies/ruby-2.0.0-p0/bin:/Users/dimitrib/.rvm/bin:/usr/local/share/python:/Users/dimitrib/bin:/usr/local/bin:/usr/local/lib/jsctags:/usr/local/share/npm/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 alias o='open'
 alias lm="list_detailed_more"

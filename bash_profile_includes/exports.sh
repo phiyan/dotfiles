@@ -3,8 +3,8 @@
 export TERM=xterm-256color
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
-export LSCOLORS=Exfxcxdxbxegedabagacad
-# export LSCOLORS=gxfxcxdxbxegedabagacad # Dark lscolor scheme
+#export LSCOLORS=Exfxcxdxbxegedabagacad
+export LSCOLORS=gxfxcxdxbxegedabagacad # Dark lscolor scheme
 export HISTCONTROL=ignoredups
 export EDITOR=vim
 export VISUAL=mvim

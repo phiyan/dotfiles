@@ -55,3 +55,5 @@ alias gemdoc='gem environment gemdir'/doc
 alias gemuninstallall='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
 alias untar="tar -xvf"
 alias be="bundle exec"
+
+source ~/.zshrc_includes/infogroup.sh

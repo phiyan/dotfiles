@@ -7,8 +7,6 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="blinks"
 
-setopt autopushd
-
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -37,6 +35,10 @@ setopt autopushd
 plugins=(git rails ruby brew git-extras)
 
 source $ZSH/oh-my-zsh.sh
+
+setopt autopushd
+unsetopt correct_all
+unsetopt share_history
 
 # Customize to your needs...
 export LSCOLORS=gxfxcxdxbxegedabagacad # Dark lscolor scheme

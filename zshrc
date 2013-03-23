@@ -42,6 +42,9 @@ unsetopt share_history
 
 # Customize to your needs...
 export LSCOLORS=gxfxcxdxbxegedabagacad # Dark lscolor scheme
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=~/bin:$PATH
 
 alias o='open'
 alias lm="list_detailed_more"

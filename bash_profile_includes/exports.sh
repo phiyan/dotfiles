@@ -14,4 +14,3 @@ export PATH=/usr/local/share/npm/bin/:$PATH
 export PATH=/usr/local/lib/jsctags:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=~/bin:$PATH
-export PATH=/usr/local/share/python:$PATH

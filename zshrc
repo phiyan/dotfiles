@@ -24,16 +24,13 @@ export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=~/bin:$PATH
 
 alias o='open'
-alias lm="list_detailed_more"
 alias ll="ls -lAh"
-alias cll="clear; ls -lAh"
 alias grep='grep -H -n'
 alias pcurl='curl --proxy localhost:8888'
 alias rmquarantine='xattr -d com.apple.quarantine'
 alias stop='kill -2'
 alias shutupvim="rm /var/tmp/*.sw*"
 alias gemdoc='gem environment gemdir'/doc
-alias gemuninstallall='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
 alias untar="tar -xvf"
 alias be="bundle exec"
 

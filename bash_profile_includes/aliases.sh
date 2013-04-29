@@ -19,6 +19,8 @@ alias chrome="unsafe_chrome"
 # alias hibernate="sudo pmset -a hibernatemode 5; sudo shutdown -s now && sudo pmset -a hibernatemode 3"
 
 alias be="bundle exec"
-alias gitchanges="git st -s | sed 's/^...//g'"
 alias gobj="gcc -framework foundation"
 alias clangobj="clang -framework foundation"
+
+alias gitchanges="git st -s | sed 's/^...//g'"
+alias gitchangesspec='git st -s | cut -c 4- | ack spec | ack -v ".*(stubs|factories).*"'

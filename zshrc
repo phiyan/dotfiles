@@ -34,4 +34,5 @@ alias gemdoc='gem environment gemdir'/doc
 alias untar="tar -xvf"
 alias be="bundle exec"
 
-source ~/.zshrc_includes/infogroup.sh
+source ~/.bash_profile_includes/aliases.sh
+source ~/.bash_profile_includes/infogroup.sh

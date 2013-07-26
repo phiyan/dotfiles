@@ -37,3 +37,8 @@ alias be="bundle exec"
 
 source ~/.bash_profile_includes/aliases.sh
 source ~/.bash_profile_includes/infogroup.sh
+source ~/.bash_profile_includes/rvm.sh
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

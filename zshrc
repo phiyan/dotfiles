@@ -22,6 +22,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad # Dark lscolor scheme
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=~/bin:$PATH
+export PATH=~/bin/elastic-mapreduce-ruby:$PATH
 
 alias o='open'
 alias ll="ls -lAh"

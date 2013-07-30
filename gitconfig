@@ -38,6 +38,11 @@
   whitespace = nowarn
 [branch]
   autosetupmerge = true
+  autosetuprebase = always
+[rebase]
+  stat = true
+[branch "*branch-name*"]
+  rebase = true
 [user]
   name = Dimitri Roche
   email = dimroc@gmail.com

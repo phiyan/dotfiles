@@ -9,5 +9,7 @@
 --ignore-dir=.idea/
 --ignore-dir=.bundle/
 --ignore-dir=node_modules/
+--ignore-dir=tmp/
+--ignore-dir=log/
 
 --smart-case

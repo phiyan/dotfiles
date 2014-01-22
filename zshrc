@@ -45,6 +45,11 @@ autoload unsafe_chrome
 source ~/.bash_profile_includes/aliases.sh
 source ~/.bash_profile_includes/infogroup.sh
 source ~/.bash_profile_includes/rvm.sh
+
+if [[ -a "$HOME/.bash_profile_includes/local.sh" ]]; then
+  source ~/.bash_profile_includes/local.sh
+fi
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ### Added by the Heroku Toolbelt

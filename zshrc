@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -34,6 +36,11 @@ alias shutupvim="rm /var/tmp/*.sw*"
 alias gemdoc='gem environment gemdir'/doc
 alias untar="tar -xvf"
 alias be="bundle exec"
+
+unsafe_chrome() {
+  open -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome $1 --args --allow-file-access-from-files
+}
+autoload unsafe_chrome
 
 source ~/.bash_profile_includes/aliases.sh
 source ~/.bash_profile_includes/infogroup.sh

@@ -8,6 +8,7 @@ alias rmquarantine='xattr -d com.apple.quarantine'
 
 alias stop='kill -2'
 alias shutupvim="rm ~/.vim/.tmp/*.sw*"
+alias mvimplain="mvim -u NONE"
 
 alias gemdoc='gem environment gemdir'/doc
 alias untar="tar -xvf"

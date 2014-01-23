@@ -1,5 +1,7 @@
 [core]
   editor = vim
+[include]
+  path = .gituserconfig
 [alias]
   ls = show-ref
   st = status
@@ -43,6 +45,3 @@
   stat = true
 [branch "*branch-name*"]
   rebase = true
-[user]
-  name = Dimitri Roche
-  email = dimroc@gmail.com

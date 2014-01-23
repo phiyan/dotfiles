@@ -18,6 +18,8 @@ Create soft links from your home directory to the resources folder like so:
     ~$ ln -s resources/inputrc .inputrc
     ~$ ln -s resources/irbrc .irbrc
 
+Copy gituserconfig.template to gituserconfig.  Enter your git information.
+
 Some of the features
 ====================
 

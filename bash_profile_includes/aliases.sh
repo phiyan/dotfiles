@@ -8,6 +8,7 @@ alias rmquarantine='xattr -d com.apple.quarantine'
 
 alias stop='kill -2'
 alias shutupvim="rm ~/.vim/.tmp/*.sw*"
+alias mvimplain="mvim -u NONE"
 
 alias gemdoc='gem environment gemdir'/doc
 alias untar="tar -xvf"
@@ -25,4 +26,4 @@ alias clangobj="clang -framework foundation"
 alias gitchanges="git st -s | sed 's/^...//g'"
 alias gitchangesspec='git st -s | cut -c 4- | ack spec | ack -v ".*(stubs|factories).*"'
 alias ag="ag -i"
-alias tmigrate="rake db:migrate db:rollback db:migrate db:test:prepare"
+alias tmigrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"

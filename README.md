@@ -10,13 +10,21 @@ How to use
 
 The color scheme used for bash assumes one is using the [Solarized Dark Color Scheme](https://github.com/altercation/solarized)
 
+Copy gituserconfig.template to gituserconfig.  Replace Dimitri's name and email with your own.
+
 Create soft links from your home directory to the resources folder like so:
 
     ~$ ln -s resources/bash_profile .bash_profile
     ~$ ln -s resources/ackrc .ackrc
     ~$ ln -s resources/gitconfig .gitconfig
+    ~$ ln -s resources/gituserconfig .gituserconfig
     ~$ ln -s resources/inputrc .inputrc
     ~$ ln -s resources/irbrc .irbrc
+
+Or copy all files at once:
+
+    ~$ ln -s resources/create_symlinks.sh resources
+
 
 Some of the features
 ====================

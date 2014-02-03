@@ -1,6 +1,6 @@
 #!/bin/sh
 
-dotfiles=( zshrc ackrc bash_profile bash_profile_includes gitconfig inputrc irbrc rdebugrc gemrc gitignore )
+dotfiles=( zshrc ackrc bash_profile bash_profile_includes gitconfig gitignore gituserconfig inputrc irbrc rdebugrc gemrc )
 source=$1
 
 if [ -z $source ]; then
@@ -10,5 +10,6 @@ fi
 
 for dotfile in "${dotfiles[@]}"; do
   rm -f ".${dotfile}"
+  echo "${dotfile}"
   ln -s "${source}/${dotfile}" ".${dotfile}"
 done

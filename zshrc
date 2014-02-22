@@ -43,7 +43,6 @@ unsafe_chrome() {
 autoload unsafe_chrome
 
 source ~/.bash_profile_includes/aliases.sh
-source ~/.bash_profile_includes/infogroup.sh
 source ~/.bash_profile_includes/rvm.sh
 
 if [[ -a "$HOME/.bash_profile_includes/local.sh" ]]; then

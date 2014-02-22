@@ -1,30 +1,43 @@
 Resource Configurations
 =======================
 
-git clone this repo in the resources folder and then make soft links to these files with a preceding . in the filename.
+git clone this repo into a folder and run `create_symlinks.sh` to automatically wire up the `.rc` files to your bash profile.
 
 For vim set up please see the [vim-config](https://github.com/dimroc/vim-config).
 
 How to use
 ----------
 
-The color scheme used for bash assumes one is using the [Solarized Dark Color Scheme](https://github.com/altercation/solarized)
+The color scheme used for bash is [Solarized Dark Color Scheme](https://github.com/altercation/solarized).
+Please follow the instructions there for Solarized. You can continue without Solarized.
 
-Copy gituserconfig.template to gituserconfig.  Replace Dimitri's name and email with your own.
+1. Create soft links from your **home directory** to this repo's folder:
 
-Create soft links from your home directory to the resources folder like so:
+    ```
+    ~$ ./workspace/dotfiles/create_symlinks.sh ~/workspace/dotfiles
+    ```
 
-    ~$ ln -s resources/bash_profile .bash_profile
-    ~$ ln -s resources/ackrc .ackrc
-    ~$ ln -s resources/gitconfig .gitconfig
-    ~$ ln -s resources/gituserconfig .gituserconfig
-    ~$ ln -s resources/inputrc .inputrc
-    ~$ ln -s resources/irbrc .irbrc
+    `./workspace/dotfiles` should be the folder of this repo
 
-Or copy all files at once:
+2. Copy `gituserconfig.template` to `gituserconfig` in the repo's folder and add your personal information.
 
-    ~$ ln -s resources/create_symlinks.sh resources
+    ```
+    [user]
+      name = Your Name
+      email = your@email.com
+    [github]
+      user = Username
+    ```
 
+    Becomes
+
+    ```
+    [user]
+      name = Dimitri Roche
+      email = personal@email.com
+    [github]
+      user = dimroc
+    ```
 
 Some of the features
 ====================
@@ -32,9 +45,9 @@ Some of the features
 Bash Profile - .bash_profile
 ----------------------------
 
-* Fancy color scheme that works well with Solarized Dark
+* A respectable prompt
+* Many convenient aliases, including `ll`
 * Ability to parse your git branch and append it to your PS1 prompt
-* trash - rm but places it in trash bin
 * A variety of aliases including 'stop' which kill -2
 
 Ack Resource Configuration - .ackrc
@@ -46,7 +59,7 @@ Ack Resource Configuration - .ackrc
 Git Config - .gitconfig
 -----------------------
 
-* Added a varityet of git aliases
+* Added a variety of git aliases
 * Assigned mergetool to diffmerge
 
 Input Resource Configuration - .inputrc

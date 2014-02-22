@@ -1,7 +1,4 @@
-# load libraries
-require 'rubygems' rescue nil
-require 'wirble'
-#require 'json'
+require 'rubygems'
 
 alias q exit
 
@@ -62,19 +59,12 @@ end
 
 # Hirb makes tables easy.
 extend_console 'hirb' do
-  Hirb.enable
   extend Hirb::Console
 end
 
 # awesome_print is prints prettier than pretty_print
 extend_console 'ap' do
   alias pp ap
-end
-
-# When you're using Rails 2 console, show queries in the console
-extend_console 'rails2', (ENV.include?('RAILS_ENV') && !Object.const_defined?('RAILS_DEFAULT_LOGGER')), false do
-  require 'logger'
-  RAILS_DEFAULT_LOGGER = Logger.new(STDOUT)
 end
 
 # When you're using Rails 3 console, show queries in the console
@@ -125,22 +115,9 @@ extend_console 'pm', true, false do
   end
 end
 
-extend_console 'interactive_editor' do
-  # no configuration needed
-end
-
-#
-# for rails 3
-#
-if !Rails.env.nil?
-  if defined?(Rails) && Rails.logger
-    Rails.logger =Logger.new(STDOUT)
-    ActiveRecord::Base.logger = Rails.logger
-  end
-  if defined?(Rails) && Rails.env == 'test'
-    require 'test/test_helper'
-  end
-end
+extend_console 'interactive_editor'
+extend_console 'pry'
+extend_console 'pry-debugger'
 
 # Show results of all extension-loading
 puts "#{ANSI[:GRAY]}~> Console extensions:#{ANSI[:RESET]} #{$console_extensions.join(' ')}#{ANSI[:RESET]}"

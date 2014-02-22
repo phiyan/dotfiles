@@ -50,6 +50,12 @@ Bash Profile - .bash_profile
 * Ability to parse your git branch and append it to your PS1 prompt
 * A variety of aliases including 'stop' which kill -2
 
+IRB Resource Configuration - .irbrc
+-----------------------------------
+
+* Automatically require `pry` and `pry-debugger` if in your gemset so you don't need to pollute your app's Gemfile
+* Colorize ruby prompt with wirble if in gemset
+
 Ack Resource Configuration - .ackrc
 -----------------------------------
 

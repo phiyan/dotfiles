@@ -25,3 +25,9 @@ parse_svn_repository_root() {
   svn info 2>/dev/null | grep -e '^Repository Root:*' | sed -e 's#^Repository Root: *\(.*\)#\1\/#g '
 }
 export -f parse_svn_repository_root
+
+set_go_workspace() {
+  export GOPATH=`pwd`
+  export PATH=$PATH:$GOPATH/bin
+}
+export -f set_go_workspace

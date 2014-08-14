@@ -31,3 +31,8 @@ set_go_workspace() {
   export PATH=$PATH:$GOPATH/bin
 }
 export -f set_go_workspace
+
+docker-enter() {
+  boot2docker ssh '[ -f /var/lib/boot2docker/nsenter ] || docker run --rm -v /var/lib/boot2docker/:/target jpetazzo/nsenter'
+  boot2docker ssh sudo /var/lib/boot2docker/docker-enter "$@"
+}

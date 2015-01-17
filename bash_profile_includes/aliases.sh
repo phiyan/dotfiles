@@ -3,8 +3,6 @@
 alias o='open'
 alias ll="ls -lAh"
 alias grep='grep -H -n'
-alias pcurl='curl --proxy localhost:8888'
-alias rmquarantine='xattr -d com.apple.quarantine'
 
 alias stop='kill -2'
 alias shutupvim="rm ~/.vim/.tmp/*.sw*"
@@ -16,8 +14,6 @@ alias rtags="find . -name '*.rb' | xargs /usr/bin/ctags -R -a -f tags"
 alias rgem="rvm gemset"
 
 alias chrome="unsafe_chrome"
-
-# alias hibernate="sudo pmset -a hibernatemode 5; sudo shutdown -s now && sudo pmset -a hibernatemode 3"
 
 alias be="bundle exec"
 alias gobj="gcc -framework foundation"

@@ -1,15 +1,10 @@
 #!/bin/bash
 
-dotfiles=( bash_profile bash_profile_includes gitconfig gitignore gituserconfig inputrc irbrc rdebugrc gemrc )
-source=$1
-
-if [ -z $source ]; then
-  echo "Must pass the directory where the dotfiles live"
-  exit 1
-fi
+dotfiles=( bash_profile bash_profile_includes gitconfig gitignore gituserconfig )
+source=$(pwd)
 
 for dotfile in "${dotfiles[@]}"; do
-  rm -f ".${dotfile}"
-  echo "${dotfile}"
-  ln -s "${source}/${dotfile}" ".${dotfile}"
+  mv "${HOME}/.${dotfile}" "${HOME}/${dotfile}.bak"
+  echo "linking ${source}/${dotfile} to ${HOME}/.${dotfile}"
+  ln -s "${source}/${dotfile}" "${HOME}/.${dotfile}"
 done
